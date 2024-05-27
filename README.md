@@ -13,7 +13,7 @@ def readmePath = "README.md" // or the path to your README file
 def apiUrl = "https://api.github.com/repos/${owner}/${repo}/contents/${readmePath}?ref=${branch}"
 
 // GitHub personal access token (if required)
-def githubToken = "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"
+def githubToken = ""
 
 // Making the API request
 def connection = new URL(apiUrl).openConnection()
